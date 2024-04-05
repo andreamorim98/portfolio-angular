@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 94vh;
+}
+
+.app-component {
+
+  &__header {
+    padding-top: 0.25em;
+
+    * {
+      vertical-align: bottom;
+      cursor: pointer;
+    }
+
+    span {
+      line-height: 1em;
+    }
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-end;
+  }
+
+  &__footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+
+    * {
+      vertical-align: middle;
+    }
+
+    #informacoes-sistema {
+      cursor: pointer;
+      &:hover {
+        color: darkgray;
+      }
+    }
+
+    &-container-footer {
+      background-color: #EFF5F6;
+      padding: 1em;
+      display: flex;
+      flex-flow: nowrap;
+      justify-content: flex-end;
+    }
+
+  }
+
+}
